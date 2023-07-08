@@ -128,7 +128,7 @@ class Gtranslate:
             " ".join([g for x in text.splitlines() if (g := x.strip())]),
             blocksize=self.maxchars,
             regexsep=r"\.",
-            raisewhenlonger=True,
+            raisewhenlonger=False,
             removenewlines_from_result=True,
         )
 
